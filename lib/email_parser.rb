@@ -5,7 +5,7 @@
 
 class EmailAddressParser 
   
-  attr_accessor :name :email_list
+  attr_accessor :email_list
   
   def parse(email_list)
   email_addresses.split(",").join("")
