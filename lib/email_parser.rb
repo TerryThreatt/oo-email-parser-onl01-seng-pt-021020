@@ -12,6 +12,7 @@ class EmailAddressParser
   end 
   
   def parse(email_list)
-  email_addresses.split(",").join("")
+   @email_list.split(",").join("")
+   @email_list.uniq 
   end 
 end 
