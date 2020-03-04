@@ -11,8 +11,10 @@ class EmailAddressParser
     @email_list = email_list
   end 
   
-  def parse(email_list)
-   @email_list.split(",").join("")
-   @email_list.uniq 
+  def parse 
+    @email_list.split.collect do |address|
+      address.split(',') 
+    end
+    .flatten.uniq 
   end 
 end 
