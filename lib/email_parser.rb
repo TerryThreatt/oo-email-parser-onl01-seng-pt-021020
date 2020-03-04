@@ -4,4 +4,10 @@
 # or whitespace (' ').
 
 class EmailAddressParser 
+  
+  attr_accessor :email_list
+  
+  def parse(email_addresses)
+  email_addresses.split(",").join("")
+  end 
 end 
